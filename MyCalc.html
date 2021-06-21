@@ -1,0 +1,77 @@
+<!--
+           _________________________________
+            @Author  ::  Code Camel
+                     ::  CodeCamelDev@gmail.com
+                     ::  6/21/21
+           _________________________________
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="MyCalc.css">
+    <title> MyCalc By Code Camel</title>
+
+    <script>
+      function display(val)
+      {
+        document.getElementById("textbox").value+=val;
+      }
+
+      function solve()
+      {
+        let x = document.getElementById("textbox").value;
+        let y = eval(x);
+
+        document.getElementById("textbox").value = y;
+      }
+
+      function clr()
+      {
+        document.getElementById("textbox").value = "";
+      }
+    </script>
+
+  </head>
+  <body>
+  
+    <div id="calc-wrap" class="calc-wrap-style">
+
+      <div>
+        <input type="text" id="textbox" class="textbox-style">
+        <button type="button" class="calc-button-clear" value="C" onclick="clr()">C</button>
+      </div>
+
+      <div class="button-wrap">
+
+        <ul class="button-list-row">
+          <button type="button" class="calc-button" value="7" onclick="display('7')">7</button>
+          <button type="button" class="calc-button" value="8" onclick="display('8')">8</button>
+          <button type="button" class="calc-button" value="9" onclick="display('9')">9</button>
+          <button type="button" class="calc-button" value="/" onclick="display('/')">/</button>
+        </ul>
+
+        <ul class="button-list-row">
+          <button type="button" class="calc-button" value="4" onclick="display('4')"/>4</button>
+          <button type="button" class="calc-button" value="5" onclick="display('5')"/>5</button>
+          <button type="button" class="calc-button" value="6" onclick="display('6')"/>6</button>
+          <button type="button" class="calc-button" value="*" onclick="display('*')"/>*</button>
+        </ul>
+
+        <ul class="button-list-row">
+          <button type="button" class="calc-button" value="1" onclick="display('1')"/>1</button>
+          <button type="button" class="calc-button" value="2" onclick="display('2')"/>2</button>
+          <button type="button" class="calc-button" value="3" onclick="display('3')"/>3</button>
+          <button type="button" class="calc-button" value="-" onclick="display('-')"/>-</button>
+        </ul>
+
+        <ul class="button-list-row">
+          <button type="button" class="calc-button" value="0" onclick="display('0')"/>0</button>
+          <button type="button" class="calc-button" value="." onclick="display('.')"/>.</button>
+          <button type="button" class="calc-button" value="=" onclick="solve()"/>=</button>
+          <button type="button" class="calc-button" value="+" onclick="display('+')"/>+</button>
+        </ul>
+
+      </div>
+    </div>
+  </body>
+</html>

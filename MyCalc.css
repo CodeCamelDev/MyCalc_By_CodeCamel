@@ -1,0 +1,50 @@
+/*
+           _________________________________
+            @Author  ::  Code Camel
+                     ::  CodeCamelDev@gmail.com
+                     ::  6/21/21
+           _________________________________
+*/
+.calc-wrap-style
+{
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+  background-color: #bbddff;
+  border: 2px solid black;
+}
+
+  .textbox-style
+  {
+    background-color: white;
+    width: 140px;
+    float: left;
+  }
+
+  .button-wrap
+  {
+    height: 200px;
+    border-top: 1px solid black;
+    margin-top: 40px;
+  }
+
+    .button-list-row
+    {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+      .calc-button
+      {
+        width: 40px;
+        margin: 2px;
+      }
+
+      .calc-button-clear
+      {
+        width: 40px;
+        float: right;
+      }
